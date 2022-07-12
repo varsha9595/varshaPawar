@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="crossBrowserTestNG.ListenerTest1"/>
+  </listeners>
+  <test thread-count="5" name="Testfirfox(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="crossBrowserTestNG.ValidateUserIDCrossBrowser">
+        <methods>
+          <include name="validateUserID"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logOutFromKite"/>
+          <include name="loginToKiteApp"/>
+        </methods>
+      </class> <!-- crossBrowserTestNG.ValidateUserIDCrossBrowser -->
+    </classes>
+  </test> <!-- Testfirfox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
